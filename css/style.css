@@ -1,0 +1,370 @@
+* {
+	font-family: 'PT Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Prata', serif;
+	margin: 0 0 0 0;
+	padding: 0 0 10px 0;
+}
+
+p {
+	margin: 0 0 0 0;
+	padding: 0 0 20px 0;
+}
+
+p.p_mobile {
+	display: none;
+}
+
+h1 {
+	font-size: 55px;
+	margin: 0;
+	color: #f9fcfc;
+	font-weight: normal;
+	line-height: 1;
+	padding-bottom: 25px;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: medium;
+}
+
+a {
+	text-decoration: none;
+}
+
+.page {
+	background: #f9fcfc;
+}
+
+.wrap {
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.content {
+	width: 1169px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 60px;
+	z-index: 5;
+	position: relative;
+}
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	margin: 33px 0 0 0;
+}
+
+.toggler {
+	position: absolute;
+	z-index: 1;
+	top: 24px;
+	right: 26px;
+	display: flex;
+	align-items: center;
+	width: 22px;
+	height: 24px;
+	line-height: 24px;
+	user-select: none;
+	display: none;
+}
+
+.toggler span {
+	display: inline-block;
+	vertical-align: bottom;
+	height: 100%;
+	width: 2px;
+	background: #fff;
+	position: relative;
+	transition: background .3s .5s;
+}
+
+.toggler span:before,
+.toggler span:after {
+	height: 100%;
+	width: 2px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	content: '';
+	transform-origin: 50% 50%;
+	transition: left .3s .6s, transform .3s;
+}
+
+.toggler span:before {
+	left: 12px;
+}
+
+.toggler span:after {
+	left: -12px;
+}
+
+.toggler--close span {
+	transition: background .3s 0;
+	background: transparent;
+}
+
+.toggler--close span:before,
+.toggler--close span:after {
+	transition: left .3s, transform .3s .5s;
+	left: 0;
+}
+
+.toggler--close span:before {
+	transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.toggler--close span:after {
+	transform: rotate3d(0, 0, 1, -45deg);
+}
+
+.nav--visible {
+	display: block;
+}
+
+.header_inner {
+	margin: 38px 0 0 0;
+	font-size: 16px;
+	justify-content: space-between;
+	display: flex;
+	text-align: right;
+}
+
+.header_inner a {
+	text-decoration: none;
+}
+
+.header_inner nav a {
+	margin-left: 30px;
+	color: #202020;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #021a23;
+}
+
+.promo {
+	height: 854px;
+	width: 100%;
+	background: url(../img/promo_bg_main.jpg) 50% 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	top: -60px;
+	margin-bottom: 30px;
+}
+
+.promo_wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.promo_text {
+	padding-top: 280px;
+	width: 720px;
+}
+
+.promo_text_h1_mobile {
+	display: none;
+}
+
+.promo_text p {
+	font-size: 20px;
+	color: #f9fcfc;
+	line-height: 1.4;
+}
+
+.promo_lessonform {
+	background: rgba(255, 255, 255, 0.85);
+	width: 270px;
+	border: 2px solid #021a23;
+	margin-top: 200px;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.promo_lessonform h4 {
+	color: #021a23;
+	font-family: 'PT Sans';
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1;
+	padding: 20px 30px 20px 30px
+}
+
+.promo_lessonform p {
+	color: #021a23;
+	font-size: 20px;
+	line-height: 1.4;
+	padding: 0 30px 40px 30px
+}
+
+.promo_lessonform input {
+	background: none;
+	border: none;
+	border-bottom: 2px solid #021a23;
+	color: #000;
+	margin: 0 30px 20px 30px;
+}
+
+.promo_lessonform select {
+	background: none;
+	border: none;
+	border-bottom: 2px solid #021a23;
+	color: #000;
+	margin: 0 30px 20px 30px;
+}
+
+.promo_lessonform_button {
+	width: 100%;
+	background: #021a23;
+	border-color: transparent;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 27px 0 25px 0;
+	margin-top: 30px;
+}
+
+.promo_lessonform_button_mobile {
+	display: none;
+}
+
+.footer_navigation {
+	margin-top: 90px;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding-bottom: 60px;
+}
+
+.footer_menu {
+	width: 80%;
+	text-align: right;
+}
+
+.footer_menu a {
+	margin-left: 30px;
+	color: #737274;
+	font-size: 16px;
+}
+
+.footer_logo {
+	width: 20%;
+}
+
+@media only screen and (max-width: 1279px) {
+	.wrap {
+		width: 320px;
+	}
+	.header {
+		height: 48px;
+	}
+	.toggler {
+		display: block;
+	}
+	.nav {
+		display: none;
+		position: absolute;
+		background: #000;
+		top: 0;
+		left: 0;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding-top: 62px;
+		padding-bottom: 10px;
+	}
+	.nav.nav--visible {
+		display: block;
+	}
+	.header_inner .nav a {
+		display: block;
+		color: #fff;
+		margin: 16px;
+	}
+	.logo {
+		margin-top: 24px;
+		position: relative;
+		z-index: 1;
+	}
+	.content {
+		width: 288px;
+	}
+	.promo {
+		height: 536px;
+		margin-bottom: 0;
+		top: -48px;
+	}
+	.promo_wrapper {
+		display: block;
+	}
+	.promo_text {
+		padding-top: 140px;
+		width: auto;
+	}
+	.promo_text h1 {
+		display: none;
+	}
+	.promo_text_h1_mobile {
+		display: block;
+		font-family: 'Prata', serif;
+		font-size: 32px;
+		margin: 0;
+		color: #f9fcfc;
+		font-weight: normal;
+		line-height: 1, 3;
+		padding-bottom: 25px;
+	}
+	.promo_text p {
+		display: none;
+		font-size: 16px;
+	}
+	.promo_text p.p_mobile {
+		display: block;
+		width: 200px;
+	}
+	.promo_lessonform {
+		background: none;
+		width: auto;
+		border: none;
+		margin-top: 60px;
+	}
+	.promo_lessonform h4,
+	.promo_lessonform p,
+	.promo_lessonform input,
+	.promo_lessonform select,
+	.promo_lessonform button {
+		display: none;
+	}
+	.promo_lessonform_button_mobile {
+		display: block;
+		width: 100%;
+		background: #eec643;
+		border-color: transparent;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 24px 0 25px 0;
+		text-align: center;
+	}
+	footer {
+		display: none;
+	}
+}

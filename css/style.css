@@ -246,6 +246,111 @@ a {
 	display: none;
 }
 
+.branches {
+	padding-bottom: 60px;
+}
+
+.branches_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.branches_text {
+	width: 80px;
+	padding-bottom: 30px;
+}
+
+.branches_text_rotate {
+	transform: rotate(-90deg);
+}
+
+.branches_text h2 {
+	width: 568px;
+	padding: 10px 0 9px 0;
+	font-size: 50px;
+	font-weight: normal;
+	line-height: 1;
+	color: #021a23;
+	border-top: 2px solid #eec643;
+	border-bottom: 2px solid #eec643;
+	white-space: nowrap;
+	position: relative;
+}
+
+.branches_list {
+	width: 1070px;
+}
+
+.branches_list_row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.branches_list_row_1 {
+	flex-direction: row-reverse;
+}
+
+.branches_item {
+	display: block;
+	height: 269px;
+	padding: 20px 30px 30px 30px;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.branches_item h3 {
+	font-size: 30px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.branches_item a {
+	font-size: 30px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	color: #fff;
+}
+
+.branches_item p {
+	font-size: 20px;
+	line-height: 1.4;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.branches_item_vocal {
+	width: 570px;
+	background: url(../img/branches_img_2.jpg) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.branches_item_guitar {
+	width: 470px;
+	background: url(../img/branches_img_1.jpg) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.branches_item_fortepiano {
+	width: 470px;
+	background: url(../img/branches_img_3.jpg) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.branches_item_lections {
+	width: 270px;
+	background: url(../img/branches_img_4.jpg) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.branches_item_all {
+	width: 270px;
+	background: #eec643;
+}
+
 .footer_navigation {
 	margin-top: 90px;
 	display: flex;
@@ -364,6 +469,103 @@ a {
 		padding: 24px 0 25px 0;
 		text-align: center;
 	}
+
+		.branches {
+		padding-bottom: 30px;
+	}
+	.branches_wrapper {
+		display: block;
+	}
+	.branches_text {
+		width: auto;
+		padding-bottom: 0;
+	}
+	.branches_text_rotate {
+		transform: none;
+	}
+	.branches_text h2 {
+		width: auto;
+		white-space: normal;
+		padding-left: 10px;
+		font-size: 30px;
+		margin-right: 60px;
+		margin-bottom: 15px;
+		border-top-width: 1px;
+		border-bottom-width: 1px;
+	}
+	.branches_list {
+		width: auto;
+	}
+	.branches_list_row {
+		display: block;
+		margin-bottom: 0;
+	}
+	.branches_list_row_2 {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.branches_item {
+		height: 144px;
+		margin-bottom: 15px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.branches_item h3 {
+		font-size: 18px;
+	}
+	.branches_item a {
+		font-size: 18px;
+		color: #021a23;
+		text-transform: uppercase;
+	}
+	.branches_item p {
+		font-size: 16px;
+		display: none;
+	}
+	.branches_item p.p_mobile {
+		display: block;
+		width: 200px;
+	}
+	.branches_item b {
+		display: none;
+	}
+	.branches_item_vocal {
+		width: 100%;
+	}
+	.branches_item_guitar {
+		width: 100%;
+	}
+	.branches_item_fortepiano {
+		width: 212px;
+		margin-bottom: 0;
+	}
+	.branches_item_lections {
+		display: none;
+	}
+	.branches_item_all {
+		width: 58px;
+		height: 144px;
+		background: none;
+		margin-bottom: 0;
+		padding: 0;
+	}
+	.branches_item_all a {
+		transform: rotate(-90deg);
+		transform-origin: 0 0;
+		width: 144px;
+		font-size: 16px;
+		font-weight: normal;
+		line-height: 1;
+		color: #021a23;
+		position: relative;
+		background: #eec643;
+		display: block;
+		padding: 13px;
+		box-sizing: border-box;
+		bottom: -144px;
+	}
+	
 	footer {
 		display: none;
 	}

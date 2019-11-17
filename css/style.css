@@ -453,6 +453,139 @@ a {
 	left: 0;
 }
 
+.gallery {
+	padding-bottom: 90px;
+}
+
+.gallery_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.gallery_text {
+	width: 80px;
+}
+
+.gallery_text_rotate {
+	transform: rotate(-90deg);
+}
+
+.gallery_text h2 {
+	width: 567px;
+	padding: 10px 0 9px 0;
+	font-size: 50px;
+	font-weight: normal;
+	line-height: 1;
+	color: #021a23;
+	border-top: 2px solid #eec643;
+	border-bottom: 2px solid #eec643;
+	white-space: nowrap;
+	position: relative;
+	left: 7px;
+}
+
+.gallery_list {
+	width: 1070px;
+	height: 570px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.gallery_item {
+	width: 270px;
+	height: 170px;
+	background: #ccc;
+	margin: 0 0 28px 30px;
+	color: #fff;
+	padding: 17px 12px 10px 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+}
+
+.gallery_item:before {
+	content: "";
+	display: block;
+	width: 33px;
+	height: 42px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -21px 0 0 -16px;
+	background: url(../img/icon_video.png) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.gallery_item.gallery_item_big {
+	width: 770px;
+	height: 567px;
+	margin: 0;
+	padding-left: 20px;
+	justify-content: flex-start;
+}
+
+.gallery_item.gallery_item_big:before {
+	width: 55px;
+	height: 70px;
+	margin: -35px 0 0 -27px;
+}
+
+.gallery_item:last-child {
+	margin-bottom: 0;
+}
+
+.gallery_item h3 {
+	font-size: 14px;
+	font-family: 'PT Sans', sans-serif;
+	padding-bottom: 5px;
+}
+
+.gallery_item p {
+	font-size: 14px;
+	line-height: 1.4;
+	font-family: 'PT Sans', sans-serif;
+	padding-bottom: 0;
+}
+
+.gallery_item.gallery_item_big h3 {
+	font-size: 30px;
+}
+
+.gallery_item.gallery_item_big p {
+	font-size: 20px;
+}
+
+.gallery_item_1 {
+	background: url(../img/video_preview_1.jpg) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.gallery_item_2 {
+	background: url(../img/video_preview_2.jpg) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.gallery_item_3 {
+	background: url(../img/video_preview_3.jpg) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.gallery_item_4 {
+	background: url(../img/video_preview_4.jpg) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
 .contacts {}
 
 .contacts_wrapper {
@@ -519,6 +652,7 @@ a {
 	margin-left: 30px;
 	color: #737274;
 	font-size: 16px;
+	text-transform: uppercase;
 }
 
 .footer_logo {
@@ -784,6 +918,88 @@ a {
 		box-sizing: border-box;
 		bottom: -144px;
 		text-align: left;
+	}
+	.gallery {
+		padding-bottom: 30px;
+	}
+	.gallery_wrapper {
+		display: block;
+	}
+	.gallery_text {
+		width: auto;
+	}
+	.gallery_text_rotate {
+		transform: none;
+	}
+	.gallery_text h2 {
+		width: auto;
+		white-space: normal;
+		padding-left: 10px;
+		font-size: 30px;
+		margin-right: 60px;
+		margin-bottom: 15px;
+		border-top-width: 1px;
+		border-bottom-width: 1px;
+	}
+	.gallery_list {
+		width: auto;
+		height: auto;
+		display: block;
+	}
+
+	.gallery_list .slick-list {
+		margin-left: 24px;
+		margin-right: 24px;
+	}
+
+	.slick-arrow {
+		display: block;
+		width: 10px;
+		height: 18px;
+		position: absolute;
+		top: 50%;
+		margin-top: -9px;
+		border: none;	
+		color: transparent;
+	}
+
+	.slick-prev  {
+		left: 0;
+		background: url(../img/arrow_previous.png) 0 0 no-repeat;
+	}
+	.slick-next {
+		right: 0;
+		background: url(../img/arrow_next.png) 0 0 no-repeat;
+	}
+
+	.gallery_item {
+		width: 100%;
+		height: 186px;
+		margin: 0;
+	}
+	.gallery_item p {
+		display: none;
+	}
+	.gallery_item p.p_mobile {
+		display: block;
+	}
+	.gallery_item.gallery_item_big {
+		width: 100%;
+		height: 186px;
+		margin: 0;
+		justify-content: flex-end;
+		padding: 17px 12px 10px 12px;
+	}
+	.gallery_item.gallery_item_big:before {
+		width: 33px;
+		height: 42px;
+		margin: -21px 0 0 -16px;
+	}
+	.gallery_item.gallery_item_big h3 {
+		font-size: 14px;
+	}
+	.gallery_item.gallery_item_big p {
+		font-size: 14px;
 	}
 	.contacts {
 		padding-bottom: 30px;
